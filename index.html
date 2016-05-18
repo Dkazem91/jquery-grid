@@ -7,15 +7,19 @@
  <script src="script.js"></script>
 </head>
 <body>
-<div id="container"></div>
 
-<div>
+ <div id="wrapper">
+   <h1>The Grid!</h1>
   <form>
     Grid size(x by x), x=
-<input id="size" type="number"/>
+<input id="size" type="number" min="1" max="256"/>
     <input id="submit" type="submit">
     <button>clear</button>
   </form>
+
+<div id="container"></div>
 </div>
+
 </body>
+
 </html>
