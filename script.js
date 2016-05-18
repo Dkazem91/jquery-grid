@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $('button').on('click', function(event) {
     event.preventDefault();
-    $('.unit').css("background-color", "white");
+    $('.unit').remove();
+   
 
   });
+
   $('#submit').on('click', function(event) {
     event.preventDefault();
     $('.unit').remove();
@@ -13,11 +15,10 @@ $(document).ready(function() {
       $('body').append("<p>size is too great!</p>")
     } else {
       $('p').remove();
-      var unit = $("<div class='unit'></div>");
 
       for (var x = 0; x < (input * input); x++) {
 
-        unit = $("<div class='unit'></div>");
+        var unit = $("<div class='unit'></div>");
         unit.appendTo('#container');
 
       }
